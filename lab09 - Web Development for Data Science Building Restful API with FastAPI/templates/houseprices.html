@@ -1,0 +1,34 @@
+<html> 
+    <head> 
+        <title>House Price</title> 
+    </head> 
+<body> 
+    <center> 
+        <h1>House Price</h1> 
+        <table> 
+            <tr> 
+                <th>date</th> 
+                <th>price</th> 
+                <th>Bedrooms</th> 
+                <th>Bathroomd</th> 
+                <th>sqft_living</th> 
+                <th>floors</th> 
+                <th>city</th> 
+                <th>country</th> 
+            </tr> 
+            {% for item in house_prices %} 
+            <tr> 
+                <td>{{ item.date }}</td> 
+                <td>{{ item.price }}</td> 
+                <td>{{ item.bedrooms }}</td> 
+                <td>{{ item.bathrooms }}</td> 
+                <td>{{ item.sqft_living }}</td> 
+                <td>{{ item.floors }}</td> 
+                <td>{{ item.city }}</td> 
+                <td>{{ item.country }}</td> 
+            </tr> 
+            {% endfor %} 
+        </table> 
+    </center> 
+</body> 
+</html>
